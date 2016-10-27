@@ -1,4 +1,7 @@
+/**
+This program is just display the Sum of 2 lac's Prime number
 
+*/
 
 class TwoLacPrimeSum
 {
@@ -19,12 +22,12 @@ class TwoLacPrimeSum
     
     public static void main( String [] args ) {
         
-		long loop = 2;
+	long loop = 2;
         long counter = 0;
         long sum = 0;
         final long limit = 200000;
         
-        while(true) {
+        while ( true ) {
         
             if ( Prime.checkPrime( loop ) ) {
             
