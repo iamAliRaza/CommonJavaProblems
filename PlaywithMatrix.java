@@ -26,11 +26,13 @@ class Matrix {
     input = new Scanner( System.in );
     
     }
+//--------------------------------------------------------------	
     private boolean inputChecker () {
         
     return( this.rows == 0 && this.columns == 0 );
     
     }
+//---------------------------------------------------------------
     private void subFunction( final int check ) {
         
         int hold = 0;
@@ -60,6 +62,7 @@ class Matrix {
             rows = hold;
         }
     }
+//----------------------------------------------------------------
     private void largestNumberFinder ( int check ) {
         
         int size = 0;
@@ -84,11 +87,12 @@ class Matrix {
         }   
         
     }
-    
+//--------------------------------------------------------------------
     private void displayError () {
     
         out.println(" Error : First of all input matrix values then you are able to use other functions ! ");
     }
+//--------------------------------------------------------------------
     public void inputMatrix ( int rows,int columns ) {
         
         this.rows = rows;
@@ -109,7 +113,7 @@ class Matrix {
             }
     
         }
-
+//-----------------------------------------------------------------------
     public void displayMatrix () {
         
         if ( this.inputChecker () )
@@ -139,7 +143,7 @@ class Matrix {
         }
         
     }
-    
+//----------------------------------------------------------------------
     public void rowSort ( int check ) {
         
         if ( this.inputChecker () )
@@ -168,10 +172,11 @@ class Matrix {
                 ++decrement;
             }
         }
-		if ( check == 0 )
+	if ( check == 0 )
         this.displayMatrix();
       }
     }
+//------------------------------------------------------------------------
     public void columnSort ( int check ) {
         
         if ( this.inputChecker () )
@@ -201,11 +206,11 @@ class Matrix {
                 ++decrement;
             }
         }
-		if( check == 0 )
+	if( check == 0 )
         this.displayMatrix();
       }
     }
-    
+//----------------------------------------------------------------------------
     public void sumRow () {
        
          if ( this.inputChecker () )
@@ -233,7 +238,7 @@ class Matrix {
          }
         
     }
-    
+//-----------------------------------------------------------------------------
     public void sumColumn () {
         
          if( this.inputChecker () )
@@ -259,7 +264,7 @@ class Matrix {
          }
         
     }
-    
+//--------------------------------------------------------------------------------
     public void sumWholeMatrix () {
         
          if ( this.inputChecker () )
@@ -281,7 +286,7 @@ class Matrix {
         out.println( "\n\tSum of Whole matrix = " + save );
          }
     }
-    
+//---------------------------------------------------------------------------------
     public void largestInEachRow(){
         
          if( this.inputChecker () )
@@ -297,7 +302,7 @@ class Matrix {
         this.largestNumberFinder(1);
          }
     }
-    
+//----------------------------------------------------------------------------------
     public void largestInEachColumn () {
         
          if ( this.inputChecker () )
@@ -313,7 +318,7 @@ class Matrix {
         this.largestNumberFinder(2);
          }
     }
-    
+//-----------------------------------------------------------------------------------
     public void largestInWholematrix(){
         
          if ( this.inputChecker () )
@@ -340,6 +345,11 @@ class Matrix {
         }
     }
 }
+//------------------------------------------------------------------------------------
+/**
+End of Matrix class
+
+*/
 
 public class PlaywithMatrix {
     
@@ -432,7 +442,7 @@ public class PlaywithMatrix {
         }
     
     }
-    
+//----------------------------------------------------------------------------------
     public static void main(String [] args){
         
         Matrix obj = new Matrix();
