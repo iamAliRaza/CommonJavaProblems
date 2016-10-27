@@ -129,13 +129,13 @@ class Matrix {
         
             for ( int j = 0; j < columns; j++ ){
                 
-				if ( j == columns-1 )
+		if ( j == columns-1 )
                     out.print(matrix[i][j]);
 
                 else if ( matrix[i][j] < 10 )
                     out.print(matrix[i][j]+"     ");
                 
-				else
+		else
                     out.print(matrix[i][j]+"    ");
                 }
                     out.println(" ]");
@@ -154,6 +154,7 @@ class Matrix {
             
         this.size = this.columns - 1;
         int hold = 0;
+		
         for ( int i = 0 ; i < rows ; i++ ){
             
             decrement = 1;
@@ -188,7 +189,7 @@ class Matrix {
         this.size = this.rows - 1;
         int hold = 0;
         
-		for ( int j = 0 ; j < columns ; j++ ){ 
+	for ( int j = 0 ; j < columns ; j++ ){ 
         
             decrement = 1;
             
@@ -241,7 +242,7 @@ class Matrix {
 //-----------------------------------------------------------------------------
     public void sumColumn () {
         
-         if( this.inputChecker () )
+        if( this.inputChecker () )
         
             this.displayError();
         
@@ -267,7 +268,7 @@ class Matrix {
 //--------------------------------------------------------------------------------
     public void sumWholeMatrix () {
         
-         if ( this.inputChecker () )
+        if ( this.inputChecker () )
         
             this.displayError();
         
@@ -281,21 +282,22 @@ class Matrix {
         
         for ( int i = 0; i < sum.length; i++ ) {
         
-            save = save + sum[i];
+            	save = save + sum[i];
             }
+		
         out.println( "\n\tSum of Whole matrix = " + save );
          }
     }
 //---------------------------------------------------------------------------------
     public void largestInEachRow(){
         
-         if( this.inputChecker () )
+        if( this.inputChecker () )
         
             this.displayError();
         
         else {
         
-		this.displayMatrix();
+	this.displayMatrix();
         this.rowSort(1);
         out.println();
         
@@ -305,7 +307,7 @@ class Matrix {
 //----------------------------------------------------------------------------------
     public void largestInEachColumn () {
         
-         if ( this.inputChecker () )
+        if ( this.inputChecker () )
         
             this.displayError();
         
@@ -321,14 +323,14 @@ class Matrix {
 //-----------------------------------------------------------------------------------
     public void largestInWholematrix(){
         
-         if ( this.inputChecker () )
+        if ( this.inputChecker () )
         
             this.displayError();
         
         else {
     
         save = new int[columns];
-		this.displayMatrix();
+	this.displayMatrix();
         this.columnSort(1);
         out.println();
         
@@ -360,7 +362,7 @@ public class PlaywithMatrix {
    
         char c = 'y';
         
-        while(c!='n') {
+        while ( c != 'n' ) {
             
             out.println("\n");
             out.print("   ------- Menu -------\n\n");
