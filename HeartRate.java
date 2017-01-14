@@ -1,4 +1,6 @@
 
+// This program checks your heart rate according to your age 
+
 import static java.lang.System.out;
 import static java.lang.System.in;
 import java.util.Scanner;
