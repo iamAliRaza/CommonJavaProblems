@@ -115,10 +115,9 @@ class ArrayPatterns {
         
         int overwritePreviousValue = 0;
         int minusValue = 1;
-        for ( int i = 1; i < array.length; i++) {
+        for ( int i = 1; i < array.length; i++ ) {
             
             this.shiftingElements(array[i], overwritePreviousValue++, minusValue++);
-             if (i==2);
         }
         
         out.println("\n Pattern 2:");
@@ -130,7 +129,7 @@ class ArrayPatterns {
     
     // My Algorithm 
     
-    private void shiftingElements( int [] arr, int overwritePreviousValue, int minusValue){
+    private void shiftingElements( int [] arr, int overwritePreviousValue, int minusValue ){
        
         int [] temp = new int [arr.length]; 
         System.arraycopy(arr, 0, temp, 0, arr.length);
@@ -138,7 +137,7 @@ class ArrayPatterns {
         int index = arr.length - 1;
         
         
-           for(int j = arr.length-1; j >= 0; j--){
+           for( int j = index; j >= 0; j-- ){
                
                if( overwritePreviousValue == j ){
                   
