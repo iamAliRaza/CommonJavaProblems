@@ -1,4 +1,6 @@
 
+// Problem Statement:
+// ------------------------------------------------
 
 // Write a Java program which fill a 2D-array square array as per a given patterns 1 and 2 and display them.  
 // 
